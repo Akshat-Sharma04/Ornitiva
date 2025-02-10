@@ -1,0 +1,204 @@
+/* --- General Page Styling --- */
+body {
+    background-color: #FDF7F2; /* Soft Ivory */
+    color: #333333; /* Deep Grey for readable text */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Main Product Display --- */
+.productdisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 40px 150px;
+    gap: 40px;
+}
+
+/* --- Left Section (Image Thumbnails + Main Image) --- */
+.productdisplay-left {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Thumbnail Images */
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.productdisplay-img-list img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    background: #FFF5F7; /* Light Pink-White for elegance */
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    border: 2px solid #F5A9B8; /* Soft Rose Border */
+    box-shadow: 3px 3px 6px rgba(240, 160, 180, 0.3); /* Soft Lift Effect */
+}
+
+/* Hover effect for thumbnails */
+.productdisplay-img-list img:hover {
+    border-color: #D81B60; /* Rich Pink on hover */
+    transform: scale(1.05);
+}
+
+/* Main Product Image */
+.productdisplay-main-img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    background: #FFF5F7;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    border: 3px solid #E0C1D1; /* Elegant 3D effect */
+    box-shadow: 5px 5px 12px rgba(220, 140, 160, 0.35);
+}
+
+/* Hover effect for main image */
+.productdisplay-main-img:hover {
+    border-color: #D81B60; /* Highlight with rich pink */
+    box-shadow: 6px 6px 15px rgba(216, 27, 96, 0.4);
+    transform: scale(1.02);
+}
+
+/* --- Right Section (Product Details) --- */
+.productdisplay-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 400px;
+}
+
+/* Product Title */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: black; /* Rich Pink */
+}
+
+/* Product Description */
+.productdisplay-right-description {
+    font-size: 15px;
+    color: #555555; /* Soft Grey for readability */
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Star Rating */
+.productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Pricing Section */
+.productdisplay-right-prices {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.productdisplay-right-price-old {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.productdisplay-price-new {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #D81B60;
+}
+
+/* Size Selection */
+.productdisplay-right-size h1 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.productdisplay-right-sizes {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.productdisplay-right-sizes div {
+    padding: 8px 14px;
+    border: 2px solid #F5A9B8;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.productdisplay-right-sizes div:hover {
+    background: #D81B60;
+    color: white;
+}
+
+/* --- Add to Cart Button --- */
+.productdisplay button {
+    width: 170px;
+    height: 50px;
+    background: #D81B60;
+    color: white;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    box-shadow: 3px 3px 8px rgba(216, 27, 96, 0.3);
+}
+
+.productdisplay button:hover {
+    background: #C21858;
+    box-shadow: 4px 4px 10px rgba(216, 27, 96, 0.4);
+}
+
+/* --- Categories & Tags --- */
+.productdisplay-right-category {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666;
+}
+
+.productdisplay-right-category span {
+    font-weight: bold;
+    color: #D81B60;
+}
+.productdisplay-right-sizes div {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .productdisplay-right-sizes div.selected {
+    background-color: #27ae60;
+    color: white;
+  }
+  .size-option {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .size-option.selected {
+    background-color: #27ae60;
+    color: white;
+    border: 1px solid #27ae60;
+  }
+  

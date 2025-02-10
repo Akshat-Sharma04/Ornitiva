@@ -1,0 +1,73 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;    
+}
+
+.footer-logo img {
+    width: 150px;  /* Decent size */
+    height: auto;  /* Maintains aspect ratio */
+    max-width: 200px; /* Ensures it doesn't get too big */
+}
+
+.footer-logo p {
+    color: #383838;
+    font-size: 36px; /* Adjusted for better balance */
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 18px;
+    padding: 0;
+}
+
+.footer-links li {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links li:hover {
+    color: #ff6600; /* Highlight effect on hover */
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons-container {
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons-container:hover {
+    transform: scale(1.1);
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #1a1
+}

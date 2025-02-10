@@ -1,0 +1,132 @@
+.cart-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cart-item-price,
+.cart-item-total {
+  font-size: 16px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.cart-item-quantity {
+  width: 64px;
+  height: 50px;
+
+  background: #fff;
+  border: 2px solid #ebebeb;
+}
+
+.cart-item-remove {
+  width: 15px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-item-remove:hover {
+  transform: scale(1.2);
+}
+
+.cartitems-down{
+  display: flex;
+  margin: 100px 0px;
+}
+
+.cart-item-total{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+}
+.cartitem-total-item{
+display: flex;
+justify-content:space-around;
+padding: 15px 0px;
+
+}
+.cartitems-total button{
+  width: 262px;
+  height: 58px;
+  outline: none;
+  border: none;
+  background: #ff5a5a;
+  color: #fff;
+font-size:16px;
+font-weight: 600;
+cursor: pointer;
+
+}
+.cartitems-promocode{
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+.cartitems-promocode p{
+ color: #555;
+}
+.cartitems-promobox{
+  width: 504px;             
+  margin-top: 15px;
+  padding-left: 20px;
+  height:58px;
+  background: #eaeaea;
+}
+.cartitems-promobox input{
+  border: none;
+  outline: none;
+  background: transparent;
+  font-style: 16px;
+  width: 330px;
+  height: 50px;
+}
+.cartitems-promobox button{
+  width: 170px;
+  height: 58px;             
+  font-style: 16px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
